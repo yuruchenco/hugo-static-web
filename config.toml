@@ -1,4 +1,7 @@
 theme = "ananke"
+baseURL = 'https://example.org/'
+languageCode = 'ja'
+title = 'My New Hugo Site'
 
 [params]
 custom_css = []
