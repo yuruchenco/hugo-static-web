@@ -33,6 +33,11 @@ jobs:
                return await coredemo.getIDToken()
            result-encoding: string
       #  Debug step to inspect Hugo output
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.124.1'
+          extended: true
       - name: Inspect Hugo output
         run: |
           hugo --gc --minify
